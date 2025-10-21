@@ -1,5 +1,5 @@
 # Use a base image with JDK 24
-FROM openjdk:24-slim
+FROM openjdk:17-slim
 
 # Copy the jar file to the container
 ADD target/CICD_Project_02.jar CICD_Project_02.jar
