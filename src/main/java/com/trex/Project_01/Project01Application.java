@@ -22,7 +22,7 @@ public class Project01Application {
 
 	@GetMapping("/{name}")
 	public ResponseEntity<?> testApi(@PathVariable String name){
-		String txt = "Testing API : " + name + " GET Method Successful...!";
+		String txt = "Testing API : Name:" + name + " GET Method Successful...!";
 		log.info(txt);
 		return new ResponseEntity<>(txt, HttpStatus.OK);
 	}
